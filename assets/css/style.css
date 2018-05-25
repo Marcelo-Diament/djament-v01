@@ -16,11 +16,19 @@ header, main, section, article{
 	box-sizing: border-box;
 }
 
-h1{
+h1, .chamada-principal{
 	font-family: 'Special Elite', cursive;
 	font-size: 2em;
 	text-align: center;
-	margin-top: 38vw;
+	margin-top: 29vw;
+}
+
+.display-none{
+	display: none;
+	height: 0px;
+	width: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 h2{
