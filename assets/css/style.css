@@ -8,19 +8,34 @@
 .row {
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
-header, main, section, article{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+nav ul li{
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	position: relative;
+}
+
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 h1, .chamada-principal{
 	font-family: 'Special Elite', cursive;
 	font-size: 2em;
 	text-align: center;
-	margin-top: 29vw;
+	margin-top: 30vw;
+}
+
+.subchamada-principal{
+	font-family: 'Special Elite', cursive;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30vw;
 }
 
 .display-none{
