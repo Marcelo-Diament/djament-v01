@@ -82,16 +82,27 @@ header{
 /* TEXTOS */
 
 
+h1{
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+h1 strong{
+	font-size: 1.8em;
+}
+
 h2{
 	font-family: 'Bangers', cursive;
 	font-size: 2em;
 	text-align: center;
 	line-height: 2em;
-	background-color: #fff;
-	box-shadow: 0 5px 9px -7px #000;
 	margin: 0;
     padding: 5px;
     z-index: 20;
+    text-align: center;
+    color: #fff;
 }
 
 h3{
@@ -103,6 +114,7 @@ h3{
 h4, h5, h6{
 	font-family: 'Poiret One', cursive;
 	font-size: 1.5em;
+	text-align: center;
 }
 
 p{
@@ -115,6 +127,18 @@ p{
 strong{
 	font-size: 1em;
 	font-weight: inherit;
+}
+
+/* BOTÕES '+' */
+
+.fa-plus-circle, .fa-chevron-down{
+	font-size: 3em;
+	color: rgba(255, 255, 255, 0.85);
+	text-align: center;
+}
+
+.fas:hover{
+	cursor: pointer;
 }
 
 /* BANNER */
@@ -137,7 +161,7 @@ strong{
 	margin: 0;
 	padding: 0;
 	position: relative;
-	display: block;
+	display: inline-block;
 }
 
 .banner article p:first-child{
@@ -170,31 +194,29 @@ strong{
 	line-height: 15vh;
 }
 
-.banner a i{
+.banner i{
 	font-size: 4em;
 	color: rgba(18, 103, 137, 0.7);
+	transition: color 1.5s ease;
 }
 
+/*.changeColor {
+  color: rgba(255, 255, 255, 0.7);
+}*/
 
-/* BOTÕES '+' */
 
-.fa-plus-circle, .fa-chevron-down{
-	font-size: 3em;
-	color: rgba(255, 255, 255, 0.85);
-	text-align: center;
-}
-
-.fas:hover{
-	cursor: pointer;
-}
 
 /* SOLUÇÕES - VITRINE */
 
-.solucao-vitrine{
+.solucoes h1{
+	margin-top: -15px;
+}
+
+.box-p div{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
 	display: block;
 	color: #fff;
 	font-weight: bold;
@@ -202,6 +224,13 @@ strong{
     padding-bottom: 20px;
     height: 50vh;
     z-index: 10;
+}
+
+.box-p div i{
+	display: inline-block;
+	position: absolute;
+		bottom: 20px;
+		right: 40px;
 }
 
 .consultoria{
