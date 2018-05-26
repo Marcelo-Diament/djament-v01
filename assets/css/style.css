@@ -1,3 +1,5 @@
+/* RESETS */
+
 *, body{
 	box-sizing: border-box;
 	margin: 0;
@@ -5,46 +7,80 @@
 	font-size: 16px;
 }
 
-.row {
+.container-fluid{
 	margin: 0;
 	padding: 0;
-	position: relative;
 }
 
-nav ul li{
-	display: inline-block;
+
+/* MENU */
+
+header{
+	background-color: #fff;
 	float: left;
+	display: inline-block;
 	padding: 10px;
 	position: relative;
 }
 
-.container-fluid{
-	padding-right: 0px;
-	padding-left: 0px;
+header img{
+	float: left;
+	display: inline-block;
+	margin: 5px;
 }
 
-h1, .chamada-principal{
-	font-family: 'Special Elite', cursive;
-	font-size: 2em;
-	text-align: center;
-	margin-top: 30vw;
+header ul{
+	background-color: transparent;
+	list-style: none;
+	float: left;
 }
 
-.subchamada-principal{
-	font-family: 'Special Elite', cursive;
-	font-size: 2em;
-	text-align: center;
-	color: #fff;
-	margin-bottom: 30vw;
+header ul li{
+	background-color: transparent;
+	display: inline-block;
+	float: left;
+	margin: auto;
+	padding: 5px 15px
 }
 
-.display-none{
+header ul li a{
+	background-color: transparent;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+header ul li a:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header{
+	position: fixed;
+	z-index: 2;
+}
+
+.links{
 	display: none;
-	height: 0px;
-	width: 0px;
-	padding: 0px;
-	margin: 0px;
 }
+
+.hamburguer:hover > .links{
+	display: visible;
+}
+
+.submenu{
+	display: none;
+	z-index: 3;
+}
+
+.menu:hover > .submenu{
+		display: block;
+		padding-top: 5px;
+		margin-top: 30px;
+		color: #512f58;
+}
+
+/* TEXTOS */
+
 
 h2{
 	font-family: 'Bangers', cursive;
@@ -81,6 +117,8 @@ strong{
 	font-weight: inherit;
 }
 
+/* BANNER */
+
 .banner	{
 	background-image: url(../img/banner-topo.jpg);
 	background-color: #126789;
@@ -92,19 +130,57 @@ strong{
 	padding: 0;
 	width: 100%;
 	height: 100vh;
+	display: block;
 }
 
-.banner i{
+.banner article{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+.banner article p:first-child{
+	margin-top: 15vh;
+	height: 35vh;
+}
+
+.banner article p:nth-child(2n){
+	height: 35vh;
+	padding-top: 32%;
+}
+
+.destaque{
+	font-family: 'Special Elite', cursive;
+	font-size: 2em;
+	text-align: center;
+}
+
+.preto{
+	color: #000;
+}
+
+.branco{
+	color: #fff;
+}
+
+.banner a{
+	display: grid;
+	height: 15vh;
+	line-height: 15vh;
+}
+
+.banner a i{
 	font-size: 4em;
-	color: rgba(55, 55, 55, 0.8);
-	position: absolute;
-	left: 43%;
-	bottom: 25px;
+	color: rgba(18, 103, 137, 0.7);
 }
 
-.fa-plus-circle{
+
+/* BOTÕES '+' */
+
+.fa-plus-circle, .fa-chevron-down{
 	font-size: 3em;
-	color: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 0.85);
 	text-align: center;
 }
 
@@ -112,7 +188,9 @@ strong{
 	cursor: pointer;
 }
 
-.consultoria, .criacao-e-desenvolvimento, .marketing-digital, .geracao-de-conteudo{
+/* SOLUÇÕES - VITRINE */
+
+.solucao-vitrine{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
