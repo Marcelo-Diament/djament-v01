@@ -242,16 +242,32 @@ strong{
 
 .consultoria{
 	background-image: url(../img/bg-consultoria.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .criacao-e-desenvolvimento{
 	background-image: url(../img/bg-criacao-e-desenvolvimento.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .marketing-digital{
 	background-image: url(../img/bg-marketing-digital.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .geracao-de-conteudo{
 	background-image: url(../img/bg-geracao-de-conteudo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 }
