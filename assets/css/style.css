@@ -12,6 +12,11 @@
 	padding: 0;
 }
 
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 
 /* MENU */
 
@@ -117,7 +122,7 @@ h4, h5, h6{
 	text-align: center;
 }
 
-p{
+p, form label, form input, form textarea{
 	font-family: 'Poiret One', cursive;
 	font-size: 1.4em;
 	text-align: center;
@@ -131,7 +136,7 @@ strong{
 
 /* BOTÕES '+' */
 
-.fa-plus-circle, .fa-chevron-down{
+.fa-plus-circle, .fa-chevron-circle-down{
 	font-size: 3em;
 	color: rgba(255, 255, 255, 0.85);
 	text-align: center;
@@ -178,13 +183,6 @@ strong{
 	font-family: 'Special Elite', cursive;
 	font-size: 2em;
 	text-align: center;
-}
-
-.preto{
-	color: #000;
-}
-
-.branco{
 	color: #fff;
 }
 
@@ -192,13 +190,41 @@ strong{
 	display: grid;
 	height: 15vh;
 	line-height: 15vh;
+	text-decoration: none;
+}
+
+.banner a:active, .banner a:visited{
+	text-decoration: none;
 }
 
 .banner i{
 	font-size: 4em;
-	color: rgba(18, 103, 137, 0.7);
-	transition: color 1.5s ease;
+	color: rgba(6, 46, 74, 0.7);
 }
+
+i, .fas {
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+i:hover, i:focus {
+	color: white;
+}
+
+i:active, i:visited{
+	text-decoration: none;
+}
+
+.fas:hover, .fas:focus, .fas:active {
+	color: rgba(6, 46, 74, 0.7);
+}
+
+.fas:visited{
+	text-decoration: none;
+	color: white;
+}
+
 
 /*.changeColor {
   color: rgba(255, 255, 255, 0.7);
@@ -210,6 +236,11 @@ strong{
 
 .solucoes h1{
 	margin-top: -15px;
+	margin-bottom: 25px;
+}
+
+.solucoes article{
+	margin-bottom: 20px;
 }
 
 .box-p div{
@@ -220,8 +251,7 @@ strong{
 	display: block;
 	color: #fff;
 	font-weight: bold;
-	padding-top: 45px;
-    padding-bottom: 20px;
+	padding: 45px 10px 20px 10px;
     height: 50vh;
     z-index: 10;
 }
@@ -235,16 +265,75 @@ strong{
 
 .consultoria{
 	background-image: url(../img/bg-consultoria.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .criacao-e-desenvolvimento{
 	background-image: url(../img/bg-criacao-e-desenvolvimento.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .marketing-digital{
 	background-image: url(../img/bg-marketing-digital.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .geracao-de-conteudo{
 	background-image: url(../img/bg-geracao-de-conteudo.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* INÍCIO DO FORMULÁRIO DE CONTATO */
+
+textarea{
+	resize: vertical;
+}
+
+label, input, textarea {
+	width: 90vw;
+	margin-right: 5vw;
+	margin-left: 5vw;
+}
+
+label{
+	margin-bottom: 0px;
+}
+
+input, textarea{
+	margin-bottom: 5px;
+}
+
+input:hover, textarea:hover{
+	cursor: pointer;
+}
+
+input:focus, input:active, textarea:focus, textarea:active{
+	border: rgba(6, 46, 74, 0.7) 2px solid;
+	outline-color: rgba(6, 46, 74, 0.7);
+}
+
+/* INÍCIO DO FOOTER */
+
+footer{
+	background-color: rgb(6, 46, 74);
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+}
+
+footer p{
+	margin: 0;
 }

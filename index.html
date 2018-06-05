@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link href="assets/css/style.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src:"assets/js/script.js"></script>
+	<script src:"/assets/js/script.js"></script>
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/djament-favicon-512x512.png">
 	<title>Djament Comunicação</title>
 </head>
@@ -34,10 +34,10 @@
 	</header>
 	<main class="container-fluid">
 		<section class="banner row">
-			<article class="col-xs-12">
-				<p class="destaque preto">Você já sabe onde quer chegar</p>
-				<p class="destaque branco"> E nós, conhecemos o caminho</p>
-				<a href="#solucoes"><i class="fas fa-chevron-down"></i></a>
+			<article class="col-xs-12 intro">
+				<p class="destaque">Você já sabe onde quer chegar</p>
+				<p class="destaque"> E nós, conhecemos o caminho</p>
+				<a href="#solucoes"><i class="fas fa-chevron-circle-down"></i></a>
 			</article>
 		</section>
 		<section class="solucoes row" id="solucoes">
@@ -47,7 +47,7 @@
 				<h2>Consultoria Digital</h2>
 				<div>
 					<h3>Posicionamento e Comunicação Digital</h3>
-					<h4>Saiba como <strong>posicionar seu negócio</strong><br>da forma certa na <strong>Internet</strong></h4>
+					<h4>Entenda como <strong>posicionar sua marca</strong> da forma certa na <strong>Internet</strong></h4>
 					<a href="#"><i class="fas fa-plus-circle"></i></a>
 				</div>
 			</article>
@@ -55,7 +55,7 @@
 				<h2>Geração de Conteúdo</h2>
 				<div>
 					<h3>Foto e Vídeo, Redação e Postagem</h3>
-					<h4>Gere mais do que <strong>leads</strong>, gere<br><strong>engajajamento com seu público</strong></h4>
+					<h4>Gere mais do que <strong>leads</strong>, gere <strong>engajajamento com seu público</strong></h4>
 					<a href="#"><i class="fas fa-plus-circle"></i></a>
 				</div>
 			</article>
@@ -63,7 +63,7 @@
 				<h2>Desenvolvimento Web</h2>
 				<div>
 					<h3>Sites, eCommerces, Portais</h3>
-					<h4>Fortaleça sua <strong>presença digital<br></strong> através da <strong>Experiência do Usuário</strong></h4>
+					<h4>Construa sua <strong>presença digital </strong> através da <strong>Experiência do Usuário</strong></h4>
 					<a href="#"><i class="fas fa-plus-circle"></i></a>
 				</div>
 			</article>
@@ -71,14 +71,39 @@
 				<h2>Marketing Digital</h2>
 				<div>
 					<h3>Google, SEO e Inbound Mkt</h3>
-					<h4><strong>Alcance consumidores</strong> reais,<br><strong>gere valor</strong> à sua marca</h4>
+					<h4><strong>Alcance consumidores</strong> reais, <strong>gere valor</strong> à sua marca</h4>
 					<a href="#"><i class="fas fa-plus-circle"></i></a>
 				</div>
 			</article>
 		</section>
+		<section id="contato">
+			<article>
+				<p>Vamos tomar um café e conversar sobre o seu projeto!</p>
+				<form action="enviar.php" method="POST" >
+					<fieldset>
+						<label for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Nome Completo">
+						<br><br>
+						<label for="email">Email</label><br>
+						<input type="email" placeholder="email@dominio.com" id="email" name="email">
+						<br><br>
+						<label for="tel">Telefone</label><br>
+						<input id="tel" type="text" name="tel" placeholder="(DDD) XXXXX-XXXX">
+						<br><br>
+						<label for="empresa">Empresa</label><br>
+						<input type="text" placeholder="Nome da Empresa" id="empresa" name="empresa">
+						<br><br>
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+					</fieldset>
+				</form>
+			</article>
+		</section>
 	</main>
 	<footer>
-		
+		<article class="col-12">
+			<p>Telefone: 11 97605 2723<br>email: contato@djament.com.br</p>
+		</article>
 	</footer>
 </body>
 </html>
